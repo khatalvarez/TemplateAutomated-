@@ -58,8 +58,8 @@ module.exports.run = async function ({ api, event, args }) {
       const [
         gearRes, eggRes, weatherRes, honeyRes, cosmeticsRes, emojiRes
       ] = await Promise.all([
-        axios.get('https://growagardenstock.com/api/stock?type=gear-seeds'),
-        axios.get('https://growagardenstock.com/api/stock?type=egg'),
+        axios.get('https://vmi2637310.contaboserver.net/api/stocks'),
+        axios.get('https://vmi2637310.contaboserver.net/api/stocks'),
         axios.get('https://growagardenstock.com/api/stock/weather'),
         axios.get('http://65.108.103.151:22377/api/stocks?type=honeyStock'),
         axios.get('https://growagardenstock.com/api/special-stock?type=cosmetics'),
