@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 module.exports.config = {
-  name: 'tempmail',
+  name: 'novamail',
   version: '1.0.0',
   role: 0,
   hasPrefix: false,
@@ -15,7 +15,7 @@ module.exports.config = {
 module.exports.run = async function({ api, event, args }) {
   const senderId = event.senderID;
   const subCommand = args[0];
-  const apiBase = 'https://smfahim.xyz/tempmail';
+  const apiBase = 'https://kaiz-apis.gleeze.com/api/tempmail-create?apikey=b6aa6c49-8e9c-4ca6-abb3-33e85c5d910c';
 
   if (!subCommand) {
     return api.sendMessage(
